@@ -1,0 +1,7 @@
+<h1>Hello, World!</h1>
+<script>
+    var exampleSocket = new WebSocket("ws://localhost:8080/events");
+    exampleSocket.onmessage = function (event) {
+        console.log(event.data);
+    }
+</script>
